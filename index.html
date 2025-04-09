@@ -1,321 +1,75 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Little Angels Montesorri</title>
-  
-  <link rel="stylesheet" href="home.css">
- 
-  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Angels Montessori</title>
+    <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-<div class="header">
-    <p class="headerParagraph">  </p>
-</div>
-<img src="images\LOGO.png" class="headerInnerimage" alt="logo">
-<div class="headerButtons">
-  <a id="innerHouse" class="headerInnerButtons"><i class="fa-lg fa-solid fa-house" style="color: #EFEDE8;"></i><span class="tooltip">Home</span></a>
-  <a href="admission.html" class="headerInnerButtons"><i class="fa-lg fa-solid fa-user-graduate" style="color: #EFEDE8;"></i><span class="tooltip">Admission</span></a>
-  <a href="academics.html" class="headerInnerButtons"><i class="fa-lg fa-solid fa-book" style="color: #EFEDE8;"></i><span class="tooltip">Academics</span></a>
-  <a href="contactUs.html" class="headerInnerButtons"><i class="fa-lg fa-solid fa-phone" style="color: #EFEDE8;"></i><span class="tooltip">Contact us</span></a>
-  <a id="searchButton" class="headerInnerButtons"><i class=" fa-lg fa-solid fa-magnifying-glass" style="color: #EFEDE8;"></i><span class="tooltip">Search</span></a>
-</div>
-  <div id="searchDialog" class="searchDialog">
-      <div class="searchContainer">
-          <input type="text" id="searchInput" list="searchSuggestions" placeholder="Search...">
-          <datalist id="searchSuggestions"></datalist>
-          <button id="searchSubmit">Enter</button>
-      </div>
-      <div id="searchResults"></div>
-  </div>
+    <header class="header">
+        <img src="images/LOGO.png" class="headerInnerimage" alt="logo">
+        <nav class="headerButtons">
+            <a href="#" id="innerHouse" class="headerInnerButtons"><i class="fa-solid fa-house"></i><span class="tooltip">Home</span></a>
+            <a href="admission.html" class="headerInnerButtons"><i class="fa-solid fa-user-graduate"></i><span class="tooltip">Admission</span></a>
+            <a href="academics.html" class="headerInnerButtons"><i class="fa-solid fa-book"></i><span class="tooltip">Academics</span></a>
+            <a href="contactUs.html" class="headerInnerButtons"><i class="fa-solid fa-phone"></i><span class="tooltip">Contact us</span></a>
+            <a href="#" id="searchButton" class="headerInnerButtons"><i class="fa-solid fa-magnifying-glass"></i><span class="tooltip">Search</span></a>
+        </nav>
+    </header>
 
-<!-- <div class="jumpingDiv" onclick="toggleToggler()">
-  <i id="jumpingToggler" class="fa-2x fa-solid fa-child-reaching fa-bounce" style="color: midnightblue;"></i>
-  <i id="jumpingToggler" class="fa-solid fa-bounce" style="color: midnightblue;">Click</i>
-</div>
-<div class="toggler">
-  <img src="images\testimg.jpg" class="togglerImage">
-  <div class="togglerDropdowns">
-    <div class="dropdown">
-      <button class="dropbtn">Home</button>
-    
-    </div> <br>
-    <div class="dropdown">
-      <button class="dropbtn">Admission</button>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-      </div>
-    </div> <br>
-    <div class="dropdown">
-      <button class="dropbtn">Academics</button>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-      </div>
-    </div> <br>
-    <div class="dropdown">
-      <button class="dropbtn">Contact us</button>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-      </div>
-    </div> <br>
-    <div class="dropdown">
-      <button class="dropbtn">About us</button>
-      <div class="dropdown-content">
-        <a href="#">1</a>
-        <a href="#">2</a>
-        <a href="#">3</a>
-        <a href="#">4</a>
-        <a href="#">5</a>
-      </div>
-    </div> <br>
-  </div>
-</div> -->
-<div class="socialDiv">
-  <a class="facebookClass"><i class="fa-lg fa-brands fa-facebook-f" style="color: rgb(5, 4, 27);"></i></a>
-  <a class="twitterClass"><i class="fa-lg fa-brands fa-twitter" style="color: rgb(5, 4, 27);"></i></a>
-  <a class="instagramClass"><i class="fa-lg fa-brands fa-instagram" style="color: rgb(5, 4, 27);"></i></a>
-  <a class="youtubeClass"><i class="fa-lg fa-brands fa-youtube" style="color: rgb(5, 4, 27);"></i></a>
-  <a class="linkdenClass"><i class="fa-lg fa-brands fa-linkedin-in" style="color: rgb(5, 4, 27);"></i></a>
-</div>
-
-<div class="background-container" id="background-container">
-  <div class="background-image" id="background-image">
-    <div class="overlay"><div class="schoolName">
-      <p class="schoolNamePara">Welcome to Little Angels Montessori</p>
-    </div>
-
-    <div class="backgroundImageWriteUp" >
-      <p class="backgroundImageWriteUpHeader">Exciting Learning Adventures Await! </p>
-      <p class="backgroundImageWriteUpBody">At Little Angels Montesorri, we believe that every child's educational journey should be filled with excitement and wonder. Our dedicated team of teachers creates a vibrant learning environment where curiosity is encouraged, and exploration is celebrated. From interactive science experiments to creative arts and crafts, every day at Little Angels Montesorri is an adventure waiting to happen!</p>
-      <button class="show-more" onclick="toggleBody()">Show More</button>
-    </div>
-
-    <div class="backgroundImageWriteUp" >
-      <p class="backgroundImageWriteUpHeader">Nurturing Tomorrow's Leaders </p>
-      <p class="backgroundImageWriteUpBody">We are committed to nurturing the leaders of tomorrow. At Little Angels Montesorri, we understand that each child is unique and has their own talents and strengths. Through personalized attention and a supportive community, we empower our students to discover their potential and develop essential leadership skills such as communication, collaboration, and critical thinking. Together, we're shaping confident, compassionate leaders who will make a positive impact on the world.</p>
-      <button class="show-more" onclick="toggleBody()">Show More</button>
-    </div>
-
-    <div class="backgroundImageWriteUp" >
-      <p class="backgroundImageWriteUpHeader">A Safe and Supportive Environment </p>
-      <p class="backgroundImageWriteUpBody">The safety and well-being of our students are our top priorities. At Little Angels Montesorri, we provide a warm and welcoming atmosphere where every child feels valued and respected. Our dedicated staff ensures that our school is a safe and supportive environment where students can thrive academically, socially, and emotionally. With a strong emphasis on kindness and inclusion, we foster friendships that last a lifetime and create memories that our students will cherish forever. Welcome to Little Angels Montesorri, where every child's potential is realized!</p>
-      <button class="show-more" onclick="toggleBody()">Show More</button>
-    </div>
-
-    <div class="backgroundImageWriteUp" >
-      <p class="backgroundImageWriteUpHeader" >Fostering a Love for Learning </p>
-      <p class="backgroundImageWriteUpBody">At Little Angels Montesorri, we believe that learning should be a joyful and lifelong pursuit. We're passionate about instilling a love for learning in our students by making education engaging, meaningful, and fun! From exciting field trips to captivating storytelling sessions, we inspire curiosity and ignite imaginations. Our goal is not just to teach students what to learn, but also how to learn, equipping them with the skills and enthusiasm they need to embrace learning as a lifelong adventure. Join us at Little Angels Montesorri, where every day is an opportunity to discover, explore, and grow!</p>
-      <button class="show-more" onclick="toggleBody()">Show More</button>
-    </div>
-
-    </div>
-    <div class="controls">
-      <button class="right-btn" id="change-btn"></button>
-    
-      <div class="indicators" id="indicators"></div>
-    </div>
-  </div>
-  
-</div>
-
-<div class="principalsSpeech">
-  <p class="principalsSpeechParaHeader">The Principal's Opening Speech</p> <u class="underlinePrincipalsSpeech"></u>
-  <p class="principalsSpeechPara">"Good day, esteemed guests, Teaching and non teaching staff, parents, and most importantly, our wonderful students, It is with great pleasure and pride that I stand before you today to extend a warm welcome to our Little Angel Montessori family. As the new academic year unfolds, we embark on a journey filled with opportunities, challenges, and endless possibilities. To our returning students, welcome back! Your presence enriches our school community, and we look forward to another year of growth and achievements together. To our new students, welcome aboard! We are thrilled to have you join us, and we are committed to providing you with a supportive environment where you can thrive academically, socially, and personally. As we gather here today, let us take a moment to reflect on the incredible journey that lies ahead. Each day presents us with a chance to learn, to explore, and to make a difference in the lives of those around us. Whether you are a student, a teacher, a parent, or a member of our administrative team, know that you play a vital role in shaping the future of our school and the world beyond. At Little Angel Montessori, we are dedicated to fostering a culture of excellence, innovation, and inclusivity. We believe in the power of education to transform lives and build brighter futures. Together, we will strive to create an environment where every individual feels valued, respected, and empowered to achieve their full potential. As your principal, I am here to support you, guide you, and celebrate your successes every step of the way. I encourage you to embrace new experiences, embrace diversity, and embrace the spirit of collaboration that defines our school community. In closing, I would like to express my gratitude to each and every one of you for being part of the Little Angel Montessori family. Together, let us seize the opportunities that lie ahead and make this academic year one to remember. Thank you, and welcome to Little Angel Montessori!"</p>
-  <img class="prinipalsSpeechImage" src="images/image5.jpg" alt="principal Image">
-</div>
-
-<div class="aimsAndObjectiveFirst">
-  <div class="aimsAndObjective">
-    <div class="aims">
-      <ul class="aimsWriteUp">
-        <p class="aimsAndObjectiveHeader">Aims</p>
-        <li>To provide a nurturing, inclusive, and stimulating environment where students thrive academically, socially, and emotionally.</li>
-        <li>To cultivate a love for learning, critical thinking skills, and values essential for success in school and beyond.</li>
-      </ul>
-
-      <ul class="objectivesWriteUp" id="objectives">
-        <p class="aimsAndObjectiveHeader">Objectives</p>
-        <li>Offer a balanced and engaging curriculum that fosters holistic development.</li>
-        <li>Foster a culture of respect, responsibility, and resilience.</li>
-        <li>Support individual student needs and promote inclusivity.</li>
-        <li>Prepare students for further education, careers, and global citizenship.</li>
-      </ul>
-      
-      <i id="spinningPin1" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin2" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin3" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin4" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin5" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin6" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin7" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin8" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin9" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin10" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin11" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin12" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin13" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin14" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin15" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin16" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin17" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin18" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin19" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin20" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin21" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin22" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-      <i id="spinningPin23" class="fa-solid fa-arrows-to-circle" style="color: #050505;"></i>
-    </div>
-  </div>
-</div>
-
-<p class="OurEvents">Our Events</p>
-<div class="events">
-  
-  <div class="graduation">
-    <div class="event-description">
-      As our young graduates step onto the stage adorned with smiles as bright as the sun, we celebrate a journey of growth, learning, and endless possibilities. Our Primary School Graduation marks not just the end of one chapter but the beginning of a new adventure. With hearts full of pride and eyes gleaming with dreams, we bid farewell to our beloved students, confident in their ability to conquer new horizons. Through laughter, tears, and countless shared moments, they've grown into bright stars ready to shine in the vast sky of tomorrow. Congratulations, graduates! Your journey doesn't end here; it's just getting started.
-    </div>
-    <p class="shortEventDisGraduation">Graduation</p>
-  </div>
-  <div class="christmas-carol">
-    <div class="event-description">
-      As the air fills with the sweet melodies of familiar carols and the scent of freshly baked treats, our Primary School transforms into a winter wonderland for our cherished Christmas Carol Celebration. With twinkling lights and joyful laughter, we come together as a community to celebrate the spirit of giving, love, and joy. From enchanting performances by our talented students to heartwarming recitations of timeless tales, every moment is a reminder of the magic of the season. Let us kindle the warmth of friendship, spread the joy of kindness, and embrace the spirit of Christmas with open hearts and grateful souls.
-    </div>
-    <p class="shortEventDisCarol">Christmas Carol</p>
-  </div>
-  <div class="others">
-    <div class="event-description">
-      Beyond the realms of academics, our Primary School thrives with a vibrant tapestry of events that enrich the lives of our students and foster a sense of belonging. From sports days that ignite the spirit of competition and teamwork to cultural festivals that celebrate diversity and unity, each event is a testament to our commitment to holistic education. Whether it's Science Fairs sparking curiosity or Arts Exhibitions igniting creativity, every occasion is an opportunity for our students to explore, discover, and grow. Together, let us continue to create memorable experiences that shape the hearts and minds of our future leaders.
-    </div>
-    <p class="shortEventDisOthers">Others</p>
-  </div>
-</div>
-
-
-<!-- <div class="displayGallery" id="galleryContainer">
-  <img src="images/others.jpg" class="displayGalleryInner"></img>
-  <img src="images/others.jpg" class="displayGalleryInner"></img>
-  <img src="images/others.jpg" class="displayGalleryInner"></img>
-  <img src="images/others.jpg" class="displayGalleryInner"></img>
-   <img src="images/others.jpg" class="displayGalleryInner"></img>
-  <img src="images/others.jpg" class="displayGalleryInner"></img>
-  <img src="images/others.jpg" class="displayGalleryInner"></img>
-  <img src="images/others.jpg" class="displayGalleryInner"></img>
-   <img src="images/others.jpg" class="displayGalleryInner"></img>
- 
-</div> -->
-
-<div class="button-container" >
-  <h2 class="gallary-heading">View Our Gallery</h2>
-  <a href="gallery.html" class="button" id="buttonContainer">Explore Now</a>
-</div>
-
-<div class="hero-section">
-  <div class="hero">
-    <img src="images/carol.jpg" alt="Hero 1">
-    <p>John Peace (BSc IND CHM, PhD)</p>
-  </div>
-  <div class="hero">
-    <img src="images/carol.jpg" alt="Hero 2">
-    <p>Jane Smith (MSc ENG, MBA)</p>
-  </div>
- 
-    <div class="hero">
-      <img src="images/carol.jpg" alt="Hero 1">
-      <p>John Peace (BSc IND CHM, PhD)</p>
-    </div>
-    <div class="hero">
-      <img src="images/carol.jpg" alt="Hero 2">
-      <p>Jane Smith (MSc ENG, MBA)</p>
-    </div>
-    
-      <div class="hero">
-        <img src="images/carol.jpg" alt="Hero 1">
-        <p>John Peace (BSc IND CHM, PhD)</p>
-      </div>
-      <div class="hero">
-        <img src="images/carol.jpg" alt="Hero 2">
-        <p>Jane Smith (MSc ENG, MBA)</p>
-      </div>
-     
-        <div class="hero">
-          <img src="images/carol.jpg" alt="Hero 1">
-          <p>John Peace (BSc IND CHM, PhD)</p>
+    <div id="searchDialog" class="searchDialog">
+        <div class="searchContainer">
+            <input type="text" id="searchInput" list="searchSuggestions" placeholder="Search...">
+            <datalist id="searchSuggestions"></datalist>
+            <button id="searchSubmit">Enter</button>
         </div>
-        <div class="hero">
-          <img src="images/carol.jpg" alt="Hero 2">
-          <p>Jane Smith (MSc ENG, MBA)</p>
+        <div id="searchResults"></div>
+    </div>
+
+    <main>
+        <section class="background-container">
+            <div class="overlay">
+                <div class="schoolName">
+                    <p class="schoolNamePara">Welcome to Little Angels Montessori</p>
+                </div>
+                <div class="backgroundImageWriteUp">
+                    <p class="backgroundImageWriteUpHeader">Exciting Learning Adventures Await!</p>
+                    <p class="backgroundImageWriteUpBody">At Little Angels Montessori, we provide a nurturing, vibrant learning environment.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="principalsSpeech">
+            <h2>The Principal's Opening Speech</h2>
+            <p>"Welcome to a new academic year filled with opportunities and endless possibilities."</p>
+        </section>
+
+        <section class="aimsAndObjectives">
+            <div class="aims">
+                <h3>Aims</h3>
+                <ul>
+                    <li>To provide a nurturing, inclusive, and stimulating environment.</li>
+                    <li>To cultivate critical thinking and lifelong learning skills.</li>
+                </ul>
+            </div>
+            <div class="objectives">
+                <h3>Objectives</h3>
+                <ul>
+                    <li>Offer a balanced and engaging curriculum.</li>
+                    <li>Foster resilience and inclusivity.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="contact-info">
+            <h3>Contact Us</h3>
+            <p>Email: info@example.com</p>
+            <p>Phone: +123456789</p>
         </div>
-  <!-- Add more hero divs with images and descriptions -->
-</div>
-
-<section class="testimony-section">
-  <div class="testimony">
-    <p>"My child's experience at this school has been truly exceptional. The dedication of the teachers and staff is commendable. I have seen remarkable growth in my child's academic and personal development."</p>
-    <div class="rating">
-      <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
-    </div>
-    <p class="parent-name">- John Doe</p>
-  </div>
-
-  <div class="testimony">
-    <p>"My child's experience at this school has been truly exceptional. The dedication of the teachers and staff is commendable. I have seen remarkable growth in my child's academic and personal development."</p>
-    <div class="rating">
-      <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
-    </div>
-    <p class="parent-name">- John Doe</p>
-  </div>
-
-  <div class="testimony">
-    <p>"My child's experience at this school has been truly exceptional. The dedication of the teachers and staff is commendable. I have seen remarkable growth in my child's academic and personal development."</p>
-    <div class="rating">
-      <span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9733;</span><span class="star">&#9734;</span>
-    </div>
-    <p class="parent-name">- John Doe</p>
-  </div>
-  <!-- Add more testimonies -->
-</section>
-
-<footer class="footer">
-  <div class="contact-info">
-    <h3>Contact Us</h3>
-    <p>Email: info@example.com</p>
-    <p>Phone: +123456789</p>
-    <p>Address: 123 Street, City, Country</p>
-  </div>
-  <div class="contact-form">
-    <h3>Send us a Message</h3>
-    <form>
-      <input type="text" placeholder="Your Name">
-      <input type="email" placeholder="Your Email">
-      <textarea placeholder="Your Message"></textarea>
-      <button type="submit">Send</button>
-    </form>
-  </div>
-  <div class="partners">
-    <h3>Our Partners</h3>
-    <div class="partner-logos">
-      <img src="partner1.png" alt="Partner 1">
-      <img src="partner2.png" alt="Partner 2">
-      <!-- Add more partner logos -->
-    </div>
-  </div>
-</footer>
-
-
+    </footer>
 </body>
 <script src="home.js" defer></script>
 <script src="https://kit.fontawesome.com/5bbb50cb77.js" crossorigin="anonymous"></script>
